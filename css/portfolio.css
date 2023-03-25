@@ -36,7 +36,8 @@ h1 {
 }
 
 .contact-container h1,
-.work-container h1 {
+.work-container h1,
+.about-container h1 {
   font-size: 22px;
   font-weight: 600;
   text-align: left;
@@ -65,6 +66,7 @@ h3 {
 
 p {
   font-size: 16px;
+  line-height: 1.5;
 }
 
 .hero {
@@ -161,12 +163,9 @@ p {
 }
 
 .project-cards .card img {
-  max-width: 400px;
+  width: 100%;
+  height: 100%;
   border-radius: 5px;
-}
-
-.project-cards .card p {
-  line-height: 1.5;
 }
 
 .project-cards .card-text {
@@ -197,10 +196,13 @@ p {
 }
 
 .link {
-  text-transform: uppercase;
-  letter-spacing: 2.4px;
   transition: all 0.5s ease;
   color: var(--first-color);
+}
+
+.contact-bar .link {
+  text-transform: uppercase;
+  letter-spacing: 2.4px;
 }
 
 a {
@@ -242,6 +244,14 @@ a {
 .contact-info-link-content {
   margin-left: 10px;
   line-height: 2;
+}
+
+.contact-info-link-content img {
+  width: 15px;
+}
+
+.contact-info-link-content a {
+  display: inline-flex;
 }
 
 .contact-info-link-title {
@@ -340,16 +350,55 @@ a {
   color: var(--background-color);
 }
 
-/*----- work page -----*/
+/*-----  -----*/
 
 .work-container {
   padding: 80px 0 10px;
   margin-bottom: 30px;
 }
 
-.work-container p {
-  color: var(--font-color);
-  text-align: left;
+.about-container {
+  padding: 80px 160px 60px;
+  margin-bottom: 30px;
+  margin-left: 40px;
+}
+
+.about-container-flex {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.about-container-flex img {
+  border-radius: 5px;
+  max-width: 400px;
+  max-height: 300px;
+}
+
+.about-container-flex-text {
+  padding: 0 80px 0 40px;
+}
+
+summary .section-title {
+  display: inline;
+  cursor: pointer;
+  color: var(--first-color);
+}
+
+details {
+  margin-bottom: 15px;
+}
+
+details h3 {
+  font-size: 18px;
+}
+
+details .section-text-container {
+  margin: 16px 16px 48px;
+}
+
+details .section-text {
+  padding: 10px 0;
+  border-bottom: 1px dashed var(--branding-color);
 }
 
 /*----- navigation -----*/

@@ -74,6 +74,9 @@ p {
   padding: 60px;
   text-align: center;
   margin-bottom: 130px;
+  background-image: url("/img/b1.svg");
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 .hero-link a {
@@ -92,7 +95,7 @@ p {
   margin-top: 60px;
 }
 
-.hero-link a:hover {
+.hero-link:hover {
   color: var(--branding-color);
 }
 

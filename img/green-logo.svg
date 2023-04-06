@@ -7,13 +7,13 @@
         -->
           <defs>
             <linearGradient id="circle-linear-gradient">
-              <stop stop-color="#3E8967" offset="0"></stop>
-              <stop stop-color="#AACE44" offset="0.5"></stop>
-              <stop stop-color="#3E8967" offset="1"></stop>
+              <stop stop-color="#8e8225" offset="0"></stop>
+              <stop stop-color="#fbf4a1" offset="0.5"></stop>
+              <stop stop-color="#8e8225" offset="1"></stop>
             </linearGradient>
             <linearGradient id="text-linear-gradient">
-              <stop stop-color="#70A564" offset="0"></stop>
-              <stop stop-color="#E8E2DB" offset="1"></stop>
+              <stop stop-color="#b7a147" offset="0"></stop>
+              <stop stop-color="#fdf5a6" offset="1"></stop>
             </linearGradient>
           </defs>
           <!--:: circle ::-->

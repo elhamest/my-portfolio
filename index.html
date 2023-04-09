@@ -19,103 +19,151 @@
   </head>
 
   <body>
-    <!-- menu started-->
-    <nav>
-      <div class="nav-logo">
-        <a href="/" title="Homepage">
-          <img src="/img/green-logo.svg" alt="" href="/"
-        /></a>
-      </div>
-      <button class="nav-button">
-        <img src="/img/menu-30.png" alt="menu toggle icon" />
-      </button>
-      <div class="nav-link">
-        <ul>
-          <li class="active"><a href="/" title="Homepage">Home</a></li>
-          <li><a href="/about.html" title="About Patricia">About</a></li>
-          <li><a href="/work.html" title="Patricia's work">Work</a></li>
-          <li>
-            <a href="/contact.html" title="Contact Patricia">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <!--menu ended-->
+    <div class="page-container">
+      <!-- all page content -->
 
-    <div class="hero">
-      <h3>Hi, I'm</h3>
-      <h1>Elham Estedlali</h1>
-      <h2>
-        I'm a Front-end web developer passionate about<br />
-        creating interactive applications and experiences on the web.
-      </h2>
-      <a href="#project-section" class="hero-link">Check out my work!</a>
+      <div class="content-wrap">
+        <!-- all page content except footer -->
+
+        <!-- menu started-->
+        <nav>
+          <div class="nav-logo">
+            <a href="/" title="Homepage">
+              <img src="/img/green-logo.svg" alt="" href="/"
+            /></a>
+          </div>
+          <button class="nav-button">
+            <img src="/img/menu-30.png" alt="menu toggle icon" />
+          </button>
+          <div class="nav-link">
+            <ul>
+              <li class="active"><a href="/" title="Homepage">Home</a></li>
+              <li><a href="/about.html" title="About Patricia">About</a></li>
+              <li><a href="/work.html" title="Patricia's work">Work</a></li>
+              <li>
+                <a href="/contact.html" title="Contact Patricia">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!--menu ended-->
+
+        <div class="hero">
+          <h3>Hi, I'm</h3>
+          <h1>Elham Estedlali</h1>
+          <h2>
+            I'm a Front-end web developer passionate about<br />
+            creating interactive applications and experiences on the web.
+          </h2>
+          <a href="#project-section" class="hero-link">Check out my work!</a>
+        </div>
+
+        <div class="project">
+          <div class="project-title">
+            <h3 id="project-section">My Recent <span>Works</span></h3>
+          </div>
+
+          <div class="project-cards">
+            <div class="card card-text">
+              <h2>Weather App</h2>
+              <p>
+                It's the landing page of the weather forecast which has features
+                like search engine, unit conversion. It is integrated by
+                forecast APIs, shows wind speed, weather description, and
+                weather icon. It also shows the five-day forecast.
+              </p>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+            <div class="card card-image">
+              <img src="/img/weather-app.png" alt="" />
+            </div>
+            <div class="card card-image">
+              <img src="/img/persian-carpet.png" alt="" />
+            </div>
+            <div class="card card-text">
+              <h2>Persian Carpet App</h2>
+              <p>
+                It's the landing page of Persian Carpet which introduces the art
+                of carpet weaving in Iran.
+              </p>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+            </div>
+            <div class="card card-text">
+              <h2>My Portfolio</h2>
+              <p>
+                This is the second version of my portfolio website. With this
+                version, I wanted to keep the code as basic as possible, but I
+                make the site more interactive. all the animations on the page
+                are done with vanilla JavaScript and CSS.
+              </p>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+            </div>
+            <div class="card card-image">
+              <img src="/img/portfolio.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <!--contact bar-->
+        <section class="contact-bar">
+          <div class="contact-bar-wrapper">
+            <h3>Let's work together!</h3>
+            <a href="/contact.html" class="link">Get in touch</a>
+          </div>
+        </section>
+      </div>
+
+      <!--footer-->
+      <footer>
+        <div class="footer-wrap">
+          <div>
+            <a href="/" title="Homepage"
+              ><img src="/img/name.svg" alt="" href="/"
+            /></a>
+          </div>
+          <p>
+            © designed and built by
+            <a
+              href="https://www.linkedin.com/in/elham-estedlali/"
+              target="_blank"
+              title="Elham Estedlali"
+            >
+              Elham Estedlali</a
+            >
+          </p>
+          <div class="footer-link">
+            <a href="mailto:e.estedlali@gmail.com" target="_blank"
+              ><i class="fa-regular fa-envelope"></i
+            ></a>
+            <a href="https://t.me/eli_est" target="_blank" title="Telegram"
+              ><i class="fa-brands fa-telegram"></i
+            ></a>
+            <a
+              href="https://github.com/elhamest"
+              target="_blank"
+              title="Github profile"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/elham-estedlali/"
+              target="_blank"
+              title="Linkedin profile"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+      </footer>
     </div>
-
-    <div class="project">
-      <div class="project-title">
-        <h3 id="project-section">My Recent <span>Works</span></h3>
-      </div>
-
-      <div class="project-cards">
-        <div class="card card-text">
-          <h2>Weather App</h2>
-          <p>
-            It's the landing page of the weather forecast which has features
-            like search engine, unit conversion. It is integrated by forecast
-            APIs, shows wind speed, weather description, and weather icon. It
-            also shows the five-day forecast.
-          </p>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-          </ul>
-        </div>
-        <div class="card card-image">
-          <img src="/img/weather-app.png" alt="" />
-        </div>
-        <div class="card card-image">
-          <img src="/img/persian-carpet.png" alt="" />
-        </div>
-        <div class="card card-text">
-          <h2>Persian Carpet App</h2>
-          <p>
-            It's the landing page of Persian Carpet which introduces the art of
-            carpet weaving in Iran.
-          </p>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-          </ul>
-        </div>
-        <div class="card card-text">
-          <h2>My Portfolio</h2>
-          <p>
-            This is the second version of my portfolio website. With this
-            version, I wanted to keep the code as basic as possible, but I make
-            the site more interactive. all the animations on the page are done
-            with vanilla JavaScript and CSS.
-          </p>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-          </ul>
-        </div>
-        <div class="card card-image">
-          <img src="/img/portfolio.png" alt="" />
-        </div>
-      </div>
-    </div>
-
-    <!--contact bar-->
-    <section class="contact-bar">
-      <div class="contact-bar-wrapper">
-        <h3>Let's work together!</h3>
-        <a href="/contact.html" class="link">Get in touch</a>
-      </div>
-    </section>
-
     <script src="/js/app.js"></script>
   </body>
 </html>

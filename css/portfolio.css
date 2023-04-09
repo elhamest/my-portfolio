@@ -9,6 +9,7 @@
   --hero-background-color: #e8e2db;
   --font-color: #757575;
   /*#757575: rgb(117, 117, 117)*/
+  --logo-color: #8e8225;
 }
 
 body {
@@ -17,6 +18,16 @@ body {
   box-sizing: border-box;
   background: var(--background-color);
   font-family: var(--default-font-family);
+}
+
+.page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+.content-wrap {
+  padding-bottom: 81px;
+  /* Footer height */
 }
 
 h1,
@@ -189,7 +200,7 @@ p {
 
 .contact-bar {
   text-align: center;
-  padding: 120px 0;
+  padding: 80px 0;
   background: var(--hero-background-color);
 }
 
@@ -220,10 +231,7 @@ a {
 
 .content-border {
   border-radius: 5px;
-  /* box-shadow: 0 0 5px rgba(117, 117, 117, 0.1);*/
-  /* box-shadow: rgba(184, 135, 70, 0.1) 0px 1px 2px 0px;*/
-  /* box-shadow: rgba(184, 135, 70, 0.04) 0px 3px 5px;*/
-  box-shadow: rgba(184, 135, 70, 0.16) 0px 1px 4px;
+  border-top: 1px solid rgba(184, 135, 70, 0.16);
 }
 
 /*----- contact -----*/
@@ -231,7 +239,7 @@ a {
 .contact-container {
   display: flex;
   justify-content: space-evenly;
-  padding: 80px 140px 60px;
+  padding: 80px 140px 0;
   text-align: left;
 }
 
@@ -361,12 +369,11 @@ a {
 
 .work-container {
   padding: 80px 0 10px;
-  margin-bottom: 30px;
 }
 
 .about-container {
-  padding: 80px 120px 60px;
-  margin: 0 80px 30px;
+  padding: 80px 120px 0;
+  margin: 0 80px 0;
 }
 
 .about-container-flex {
@@ -415,12 +422,13 @@ details .section-text {
 /*----- navigation -----*/
 
 nav {
+  padding: 0;
+  margin: 5px 70px;
+  background: var(--background-color);
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
-  padding: 0;
-  margin: 5px 70px;
 }
 
 .nav-logo img {
@@ -458,7 +466,7 @@ nav {
 
 nav li a:hover,
 nav li.active a {
-  color: var(--branding-color);
+  color: var(--logo-color);
   letter-spacing: 1.6px;
 }
 
@@ -469,6 +477,48 @@ nav li.active a {
   position: absolute;
   right: 10px;
   display: none;
+}
+
+/*----- footer -----*/
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 81px;
+}
+
+.footer-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+footer p {
+  font-size: 14px;
+  color: var(--logo-color);
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover,
+.footer-link i:hover {
+  color: var(--first-color);
+}
+
+.footer-link {
+  display: flex;
+  margin: 30px 0;
+}
+
+.footer-link i {
+  display: inline-block;
+  color: var(--logo-color);
+  font-size: 18px;
+  padding: 0 10px 0;
 }
 
 /*----- responsive -----*/

@@ -90,7 +90,7 @@ p {
   padding: 60px;
   text-align: center;
   margin-bottom: 130px;
-  background-image: url("/img/b1.svg");
+  background-image: url("/img/flower.svg");
   background-repeat: no-repeat;
   background-position: right;
 }
@@ -193,8 +193,6 @@ p {
 }
 
 .project-cards .card-image {
-  /*box-shadow: 0 0 1px rgba(184, 135, 70, 0.3);*/
-  /*box-shadow: 0 0 5px rgba(184, 135, 70, 0.1);*/
   box-shadow: rgba(117, 117, 117, 0.1) 0px 3px 5px;
 }
 
@@ -309,6 +307,7 @@ a {
   background: var(--first-color);
   border-radius: 5px;
   height: fit-content;
+  width: 328px;
 }
 
 .contact-form-content {
@@ -372,7 +371,7 @@ a {
 }
 
 .about-container {
-  padding: 80px 120px 0;
+  padding: 80px 80px 0;
   margin: 0 80px 0;
 }
 
@@ -384,7 +383,7 @@ a {
 .about-container-flex img {
   display: inline-block;
   border-radius: 5px;
-  max-width: 600px;
+  max-width: 400px;
   max-height: 400px;
 }
 
@@ -492,6 +491,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  padding: 10px 0;
 }
 
 footer p {
@@ -511,7 +511,6 @@ footer a:hover,
 
 .footer-link {
   display: flex;
-  margin: 30px 0;
 }
 
 .footer-link i {
@@ -529,7 +528,7 @@ footer a:hover,
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   nav {
     display: block;
     margin: 5px 30px;
@@ -554,5 +553,71 @@ footer a:hover,
   }
   nav li a:hover {
     background-color: var(--first-color);
+  }
+  footer img {
+    display: none;
+  }
+  .project-cards .card-image {
+    display: none;
+    box-shadow: none;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  .footer-wrap {
+    display: block;
+    text-align: center;
+  }
+  .hero {
+    background-image: none;
+    margin-bottom: 80px;
+  }
+  .card {
+    padding: 0 15px;
+  }
+  .project-title {
+    margin-bottom: 20px;
+  }
+  .footer-link {
+    display: block;
+  }
+  .about-container {
+    padding: 0;
+    margin: 0;
+  }
+  .about-container-flex {
+    flex-direction: column-reverse;
+  }
+  .about-container-flex-text {
+    padding: 15px 15px 15px 25px;
+  }
+  .about-container-flex img {
+    margin: 0 auto;
+  }
+  .work-container {
+    padding: 30px 0 10px;
+  }
+  .work-container h1 {
+    padding: 0 15px 0;
+  }
+  .contact-container {
+    flex-direction: column;
+    padding: 15px 15px 15px 30px;
+  }
+  .contact-form {
+    margin: 15px auto 0;
+  }
+  .contact-info-description,
+  .contact-info h1 {
+    text-align: center;
+  }
+  .contact-info-link {
+    justify-content: center;
+  }
+  .social-link {
+    text-align: center;
   }
 }

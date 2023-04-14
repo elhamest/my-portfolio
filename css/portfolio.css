@@ -14,7 +14,7 @@
 
 body {
   min-height: 100vh;
-  margin: 0;
+  margin: 0 auto;
   box-sizing: border-box;
   background: var(--background-color);
   font-family: var(--default-font-family);
@@ -371,13 +371,12 @@ a {
 }
 
 .about-container {
-  padding: 80px 80px 0;
+  padding: 60px 80px 0;
   margin: 0 80px 0;
 }
 
 .about-container-flex {
   display: flex;
-  margin-bottom: 30px;
 }
 
 .about-container-flex img {
@@ -388,7 +387,7 @@ a {
 }
 
 .about-container-flex-text {
-  padding: 40px;
+  padding: 40px 40px 0;
 }
 
 summary .section-title {
@@ -490,8 +489,9 @@ footer {
 .footer-wrap {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 10px 0;
+  margin: 0 70px 0;
 }
 
 footer p {
@@ -557,6 +557,12 @@ footer a:hover,
   footer img {
     display: none;
   }
+  .project h1 {
+    text-align: center;
+  }
+  .project-cards {
+    justify-content: center;
+  }
   .project-cards .card-image {
     display: none;
     box-shadow: none;
@@ -575,8 +581,18 @@ footer a:hover,
     background-image: none;
     margin-bottom: 80px;
   }
+  .hero-link {
+    margin-top: 30px;
+  }
   .card {
     padding: 0 15px;
+  }
+  .card-text h2,
+  .card-text p {
+    text-align: center;
+  }
+  .card-text ul {
+    justify-content: center;
   }
   .project-title {
     margin-bottom: 20px;
